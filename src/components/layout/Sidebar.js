@@ -4,15 +4,15 @@ import {FaChevronDown, FaInbox, FaRegCalendarAlt, FaRegCalendar} from 'react-ico
 export const Sidebar = () => (
   <div className="sidebar" data-testid="sidebar">
     <ul className="sidebar__generic">
-      <li>
+      <li className="inbox" data-testid="inbox">
         <span> <FaInbox/> </span>
         <span> Inbox </span>
       </li>
-      <li>
+      <li className="today" data-testid="today">
         <span> <FaRegCalendar/> </span>
         <span> Today </span>
       </li>
-      <li>
+      <li className="next_7" data-testid="next_7">
         <span> <FaRegCalendarAlt/> </span>
         <span> Next 7 days </span>
       </li>
