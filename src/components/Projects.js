@@ -1,5 +1,6 @@
 import React, {useState} from 'react';
 import { useSelectedProjectValue, useProjectsValue } from '../context';
+import {SingleProject} from './SingleProject'
 
 export const Projects = ({ activeValue = true}) => {
   const [active, setActive] = useState(activeValue);
@@ -21,7 +22,7 @@ export const Projects = ({ activeValue = true}) => {
           setSelectedProject(project.projectId);
         }}
       >
-        I am a project
+        <SingleProject project={project}/>
       </li>
     ))
   )
