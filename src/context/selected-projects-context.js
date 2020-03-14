@@ -4,7 +4,7 @@ import PropTypes from 'prop-types';
 export const SelectedProjectContext = createContext();
 
 export const SelectedProjectProvider =  ({children}) => {
-  const {SelectedProject, setSelectedProject} = useState('INBOX');
+  const [SelectedProject, setSelectedProject] = useState('INBOX');
   return (
     <SelectedProjectContext.Provider value={{SelectedProject,setSelectedProject}}>
       {children}
