@@ -57,7 +57,7 @@ export const useProjects = () => {
       .orderBy('projectId')
       .get()
       .then(snapshot => {
-        const allProjects = snapshot.doc.map(project => ({
+        const allProjects = snapshot.docs.map(project => ({
           ...project.data(),
           docId: project.id,
         }))
