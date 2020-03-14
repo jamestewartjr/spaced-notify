@@ -47,7 +47,6 @@ export const SingleProject = ({project}) => {
               >
                 Cancel
               </button>
-
             </div>
           )}
       </span>
