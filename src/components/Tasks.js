@@ -1,5 +1,6 @@
 import React, { useEffect } from 'react';
-import {Checkbox} from '../components/Checkbox'
+import {Checkbox} from './Checkbox';
+import {AddTask} from './AddTask';
 import {useTasks} from '../hooks';
 import {collectedTasks} from '../constants'
 import {getTitle, getCollectedTitle, collectedTasksExist} from '../helpers';
@@ -39,6 +40,7 @@ export const Tasks = () => {
           </li>
         ))}
       </ul>
+      <AddTask />
     </div>
   )
 }
